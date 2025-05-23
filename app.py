@@ -21,24 +21,24 @@ app = FastAPI()
 # Configure o logger
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-VERSION = "1.0.0"
+VERSION = "0.0.1"
 logger.info(f"Versão da aplicação: {VERSION}")
 
 
 
 MANIFEST = {
-    "id": "com.skyflix",
-    "version": "1.0.0",
-    "name": "SKYFLIX",
-    "description": "Tenha o melhor dos filmes e séries com Skyflix",
+    "id": "com.iptv",
+    "version": "0.0.1",
+    "name": "IPTV",
+    "description": "Tenha o melhor dos filmes e séries com IPTV",
     "logo": "https://i.imgur.com/qVgkbYn.png",
     "resources": ["catalog", "meta", "stream"],
     "types": ["tv", "movie", "series"],
     "catalogs": [
         {
             "type": "tv",
-            "id": "skyflix",
-            "name": "SKYFLIX",
+            "id": "iptv",
+            "name": "IPTV",
             "extra": [
                 {
                     "name": "genre",
@@ -59,18 +59,18 @@ MANIFEST = {
         },
         {
             "type": "movie",
-            "id": "skyflix",
-            "name": "SKYFLIX",
+            "id": "iptv",
+            "name": "IPTV",
             "extraSupported": ["search"]
         },
         {
             "type": "series",
-            "id": "skyflix",
-            "name": "SKYFLIX",
+            "id": "iptv",
+            "name": "IPTV",
             "extraSupported": ["search"]
         }
     ],
-    "idPrefixes": ["skyflix", "tt"]
+    "idPrefixes": ["iptv", "tt"]
 }
 
 def get_external_ip():
