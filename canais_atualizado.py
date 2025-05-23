@@ -1,3 +1,9 @@
+import requests
+import re
+from urllib.parse import quote_plus, quote
+from bs4 import BeautifulSoup
+import base64
+
 def canais_list(server):
     canais = [
         {
