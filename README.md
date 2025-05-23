@@ -1,2 +1,2 @@
-# skyflix
-skyflix is ​​an addon for stremio
+# iptv
+iptv is ​​an addon for stremio
